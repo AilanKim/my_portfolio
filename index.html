@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍑Portfolio🍑</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v10/font/simple-icons.min.css">
+
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="menu-btn" onclick="toggleMenu()" aria-label="메뉴 열기">
+            <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" onclick="toggleMenu()">Main</a>
+            <a href="#about" onclick="toggleMenu()">About Me.</a>
+            <a href="#projects" onclick="toggleMenu()">Project</a>
+            <a href="#software" onclick="toggleMenu()">Software</a> 
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </div>
+    </div> 
+    
+    <section id="home">
+    <div class="hero-content">
+        <span class="badge"><i>#차분한 기록</i></span>
+        <span class="badge"><i>#변함없는 자세</i></span>
+        <h1 class="main-title">안녕하세요.<br>
+                            겹겹이 단단해지는 웨하스<br>같은 개발자 김상희입니다.</h1>
+        <p class="sub-title"><i>흔들리지 않는 기본기와 밀도 높은 기록으로 조용하지만 확실하게 해냅니다.</i></p>
+    </div>
+
+    <img src="../portfolio_web_HTML_20260816/images/ID_character_15_투명.png" alt="캐릭터 일러스트" class="hero-character">
+    </section>
+
+    <!-- 2. 소개 -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-box">
+            <br>
+            <p>한 층 한 층 쌓은 기록으로 겹겹히 단단해지는 프로그램을 만들어 내는 개발기록자 김상희 입니다. 
+                <br>글로 생각을 정리하고 가대를 만든 후, 구현으로 옮깁니다.
+                <br>기획과 개발을 같이 하는 과정들을 즐기며, 함께 일하고 싶은 동료가 되는 것을 목표로 하고 있습니다.
+            </p>
+            <br>
+            </div>
+
+    
+    <details class="portfolio-accordion">
+    <summary class="toggle-btn">
+        <span>작품 눌러 보기</span>
+            <i class="arrow-icon"></i>
+    </summary>
+
+    <div class="slider-container">
+        <div class="slider-track">
+
+        <img src="./images/portfolio_주대리.png" alt="주대리">
+        </div>
+    </div>
+    </details>
+
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card web-app-bg">
+                <span class="project-tag">WEB APP</span>
+                <img src="./images/portfolio_portfolio.png" alt="포트폴리오" class="card-bg-img">
+                <h3>포트폴리오 웹사이트</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    저를 알리는 깔끔한 반응형 개인 브랜드 페이지 입니다.</p>
+            </div>
+            <div class="project-card bus-app-bg">
+                <img src="./images/portfolio_bus.png" alt="버스" class="card-bg-img">
+                <span class="project-tag">APP</span>
+                <h3>버스노선 앱 : 버스덕</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    어른들을 위한 초간편 큰글씨, 잠금 아이콘으로 즐겨찾기 삭제 방지 버스노선 어플 버스덕입니다.</p>
+            </div>
+            <div class="project-card damso-app-bg">
+                <img src="./images/portfolio_damso.png" alt="버스" class="card-bg-img">
+                <span class="project-tag">WEB APP : BOOK</span>
+                <h3>담소 도서책 웹페이지</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    '담소'라는 가상의 책을 소개하는 책, 출판사용 반응형 웹페이지 입니다.</p>
+            </div>
+            <div class="project-card ramen-app-bg">
+                <img src="./images/portfolio_ramen.png" alt="버스" class="card-bg-img">
+                <span class="project-tag">WEB APP : DOCUMENT</span>
+                <h3>라면과국수 정보 북</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    라면과국수에 대한 정보를 한눈에 담은 모바일용 웹 입니다.</p>
+            </div>
+            <div class="project-card haedam-app-bg">
+                <img src="./images/portfolio_haedam.png" alt="해담굴" class="card-bg-img">
+                <span class="project-tag">WEB APP : BRAND WEB</span>
+                <h3>해담굴 브랜드 홈페이지</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    가상섬 자석도에서 나는 특산물 바위굴을 파는 해담굴 브랜드 반응형 웹페이지 입니다.</p>
+            </div>
+            <div class="project-card movie-app-bg">
+                <img src="./images/portfolio_movie.png" alt="영화퀴즈" class="card-bg-img">
+                <span class="project-tag">PROGRAM</span>
+                <h3>영화제목 퀴즈 프로그램</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    문제의 설명을 보고 영화 제목을 맞추는 퀴즈 프로그램 입니다.</p>
+            </div>
+            <div class="project-card english-app-bg">
+                <img src="./images/portfolio_english.png" alt="연상퀴즈" class="card-bg-img">
+                <span class="project-tag">PROGRAM</span>
+                <h3>연상 퀴즈 프로그램(English Ver.)</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    3가지의 영어 설명을 보고 어떤 정답인지 맞추는 연상 퀴즈 프로그램 입니다.</p>
+            </div>
+            <div class="project-card vending-app-bg">
+                <img src="./images/portfolio_vending.png" alt="커피자판기" class="card-bg-img">
+                <span class="project-tag">VENDING MACHINE : COFFEE</span>
+                <h3>커피 자판기</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    커지 자판기를 파이썬으로 만들어 보았습니다.</p>
+            </div>
+            <div class="project-card vending-app-bg">
+                <img src="./images/portfolio_vending.png" alt="샌드위치자판기" class="card-bg-img">
+                <span class="project-tag">VENDING MACHINE : SANDWICH</span>
+                <h3>샌드위치 자판기</h3>
+                <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 8px;">
+                    샌드위치 자판기를 파이썬으로 만들어 보았습니다.</p>
+            </div>
+        </div>
+
+    <details class="portfolio-accordion">
+    <summary class="toggle-btn">
+        <span>작품 눌러 보기</span>
+            <i class="arrow-icon"></i>
+    </summary>
+
+    </details>
+
+    </section>
+
+    <section id="software">
+    <div class="skills-container">
+    <h2 class="skills-title">Software</h2>
+    <div class="title-line"></div>
+
+        <div class="skill-chip">
+            <i class="fa-brands fa-python"></i>
+        </div>
+
+        <div class="skill-chip">
+            <i class="fa-brands fa-html5"></i>
+        </div>
+
+        <div class="skill-chip">
+            <i class="fa-brands fa-css3-alt"></i>
+        </div>
+
+        <div class="skill-chip">
+            <i class="si si-adobeillustrator"></i>
+        </div>
+
+        <div class="skill-chip">
+            <i class="si si-adobephotoshop"></i>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <section id="social">
+        <h2 class="section-title">SNS</h2>
+        <div class="sns-links">
+            <a href="https://github.com" target="_blank" class="sns-btn">
+                <i class="fa-brands fa-github"></i> GitHub ↗</a>
+            <a href="https://instagram.com" target="_blank" class="sns-btn">
+                <i class="fa-brands fa-instagram"></i> Instagram ↗</a>
+            <a href="https://notion.so" target="_blank" class="sns-btn">
+                <i class="si si-notion"></i> Notion ↗</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Butterwehas. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
